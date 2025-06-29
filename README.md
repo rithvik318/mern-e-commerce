@@ -1,59 +1,51 @@
-<h1 align="center">E-Commerce Store 🛒</h1>
+# 🛒 E-Commerce Platform
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
+A full-stack e-commerce web application built using the **MERN** stack, integrated with **Stripe** for payments, **Cloudinary** for image management, and **Redis** for performance optimization. This platform allows users to browse products, manage their cart, checkout securely, and includes a powerful admin dashboard for product and order management.
 
-[Video Tutorial on Youtube](https://youtu.be/sX57TLIPNx8)
+---
 
-About This Course:
+## 🚀 Overview
 
--   🚀 Project Setup
--   🗄️ MongoDB & Redis Integration
--   💳 Stripe Payment Setup
--   🔐 Robust Authentication System
--   🔑 JWT with Refresh/Access Tokens
--   📝 User Signup & Login
--   🛒 E-Commerce Core
--   📦 Product & Category Management
--   🛍️ Shopping Cart Functionality
--   💰 Checkout with Stripe
--   🏷️ Coupon Code System
--   👑 Admin Dashboard
--   📊 Sales Analytics
--   🎨 Design with Tailwind
--   🛒 Cart & Checkout Process
--   🔒 Security
--   🛡️ Data Protection
--   🚀Caching with Redis
--   ⌛ And a lot more...
+This project was built to explore and implement real-world features commonly found in production-ready e-commerce platforms:
 
-### Setup .env file
+- 🔐 **Authentication** system with secure login, JWT-based access/refresh tokens, and role-based access control
+- 🛍️ **User Experience**: Browsing, cart management, checkout, and order tracking
+- 🧾 **Stripe Payment Integration** with proper order flow and receipt handling
+- 🏷️ **Coupons & Discounts**: Apply promo codes for dynamic pricing
+- 👑 **Admin Dashboard** for managing products, categories, users, and orders
+- ☁️ **Image Upload** with Cloudinary
+- ⚡ **Performance Optimization** with Redis caching
+- 📊 **Sales Analytics** with basic data visualization
 
-```bash
-PORT=5000
-MONGO_URI=your_mongo_uri
+---
 
-UPSTASH_REDIS_URL=your_redis_url
+## 🧰 Tech Stack
 
-ACCESS_TOKEN_SECRET=your_access_token_secret
-REFRESH_TOKEN_SECRET=your_refresh_token_secret
+| Layer          | Tools / Libraries                     |
+|----------------|----------------------------------------|
+| Frontend       | React, Vite, Tailwind CSS              |
+| Backend        | Node.js, Express                       |
+| Database       | MongoDB                                |
+| Auth           | JWT, Refresh Tokens                    |
+| Payment        | Stripe API                             |
+| File Upload    | Cloudinary                             |
+| Caching        | Redis (Upstash or local)               |
 
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
+---
 
-STRIPE_SECRET_KEY=your_stripe_secret_key
-CLIENT_URL=http://localhost:5173
-NODE_ENV=development
-```
+## 📸 Features Snapshot
 
-### Run this app locally
+- ✅ User registration & login
+- ✅ Product search, filtering, and pagination
+- ✅ Cart with quantity and price tracking
+- ✅ Checkout with Stripe payment flow
+- ✅ Admin product CRUD operations
+- ✅ Coupon creation and validation
+- ✅ Order management with status updates
+- ✅ Sales analytics for admins
+- ✅ Secure API and token validation middleware
 
-```shell
-npm run build
-```
+---
 
-### Start the app
 
-```shell
-npm run start
-```
+
